@@ -1,0 +1,10 @@
+{
+    "builds": [{
+        "src": "green_house_demo/wsgi.py",
+        "use": "@vercel/python"
+    }],
+    "routes": [{
+        "src": "/(.*)",
+        "dest": "green_house_demo/wsgi.py"
+    }]
+}
